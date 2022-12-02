@@ -1,50 +1,123 @@
-import React from 'react'
+import React,{ useState } from 'react'
+import Cards from './Cards'
 import "./Freesolo.css"
 
 function FreeSolo() {
+
+  const [shoes,setshoes] = useState(Cards)
+  const [text,settext] = useState()
+
+// allShoes
+  const allShoes = () => {
+    const finalShoes = Cards.filter((value) => {
+      return value;
+    })
+    setshoes(finalShoes)
+  }
+
+// nikeShoes
+const nikeShoes = (productTitles) => {
+  const finalShoes = Cards.filter((value) => {
+    return value.productTitle == productTitles
+  }) 
+
+  setshoes(finalShoes)
+}
+
+
+const niviaShoes = (productTitles) => {
+  const finalShoes = Cards.filter((value) => {
+    return value.productTitle == productTitles
+  })
+
+  setshoes(finalShoes)
+}
+
+const jordanShoes = (productTitles) => {
+  const finalShoes = Cards.filter((value) => {
+    return value.productTitle == productTitles
+  })
+
+  setshoes(finalShoes)
+}
+
+
+const campusShoes = (productTitles) => {
+  const finalShoes = Cards.filter((value) => {
+    return value.productTitle == productTitles
+  })
+
+  setshoes(finalShoes)
+}
+
+
+// search functionality
+// const changeHandle = (e) => {
+//     if (text == " ") {
+//       return e;
+//     }
+//     else {
+//       const filterData = shoes.filter(item => item.productTitle.toLowerCase().startsWith(text.toLowerCase))
+//       return filterData;
+//     }  
+// }
+
+
+
+
+
+
+
   return (
     <div >
       <div className='navbar'></div>
       <div className='sidebar'>
-      <input type="search" name="Search" id="" className='search'/>
+      <input type="search" name="Search" id="" className='search' />
         <div className='btn_div'>
-          <button>All</button>
-          <button>Science</button>
-          <button>Maths</button>
-          <button>History</button>
-          <button>Java</button>
+          <button onClick={allShoes}>All</button>
+          <button onClick={() => nikeShoes('Nike')}>nike</button>
+          <button onClick={() => niviaShoes('Nivia')}>nivia</button>
+          <button onClick={() => jordanShoes('jordan')}>jordan</button>
+          <button onClick={() => campusShoes('Campus')}>campus</button>
         </div>
       </div>
       <h2>Books On your Way</h2>
 
+      
 
-      <div class="container">
-     <div class="card">
-    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXMlMjBuaWtlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="" />
-    <div class="card-body">
-      <div class="row">
-        <div class="card-title">
-          <h4>Nike Sneaker</h4>
-          <h3>$120</h3>
+      {
+        shoes.map((prodct) => {
+            return (
+                <div className="container">
+                <div className="card">
+                <img src={prodct.productImg} alt=""/>
+                <div className="card-body">
+              <div className="row">
+                <div className="card-title">
+                  <h4>{prodct.productTitle}</h4>
+                  <h3>{prodct.productprice}</h3>
+                </div>
+                <div className="view-btn">
+                  <a href="">View Details</a>
+                </div>
+              </div>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                dignissimos.
+              </p>
+              <div className="btn-group">
+                <div className="btn">
+                  <a href="">Buy Now</a>
+                </div>
+                <a href=""> Cancel</a>
+              </div>
+            </div>
         </div>
-        <div class="view-btn">
-          <a href="">View Details</a>
-        </div>
-      </div>
-      <hr />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-        dignissimos.
-      </p>
-      <div class="btn-group">
-        <div class="btn">
-          <a href="">Buy Now</a>
-        </div>
-        <a href=""> Cancel</a>
-      </div>
     </div>
-  </div>
-</div>
+            )
+        })
+      }
 
 
     </div>
