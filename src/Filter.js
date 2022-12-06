@@ -1,11 +1,10 @@
 import React,{ useState } from 'react'
 import Cards from './Cards'
-import "./Freesolo.css"
+import "./Filter.css"
 
-function FreeSolo() {
+function Filter() {
 
   const [shoes,setshoes] = useState(Cards)
-  const [text,settext] = useState()
 
 // allShoes
   const allShoes = () => {
@@ -51,16 +50,6 @@ const campusShoes = (productTitles) => {
 }
 
 
-// search functionality
-// const changeHandle = (e) => {
-//     if (text == " ") {
-//       return e;
-//     }
-//     else {
-//       const filterData = shoes.filter(item => item.productTitle.toLowerCase().startsWith(text.toLowerCase))
-//       return filterData;
-//     }  
-// }
 
 
 
@@ -124,4 +113,4 @@ const campusShoes = (productTitles) => {
   )
 }
 
-export default FreeSolo
+export default Filter

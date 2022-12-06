@@ -1,10 +1,10 @@
 import './App.css';
-import Freesolo from './Freesolo';
+import Filter from './Filter';
 
 function App() {
   return (
     <div className="App">
-    <Freesolo />
+    <Filter />
     </div>
   );
 }
