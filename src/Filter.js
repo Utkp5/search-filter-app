@@ -8,7 +8,7 @@ function Filter() {
 
 // allShoes
   const allShoes = () => {
-    const finalShoes = Cards.filter((value) => {
+    const finalShoes = Cards.filter((value) => { //here filter is a not a file name its a inbuilt fun
       return value;
     })
     setshoes(finalShoes)
@@ -23,7 +23,7 @@ const nikeShoes = (productTitles) => {
   setshoes(finalShoes)
 }
 
-
+//niviaShoes
 const niviaShoes = (productTitles) => {
   const finalShoes = Cards.filter((value) => {
     return value.productTitle == productTitles
@@ -32,6 +32,7 @@ const niviaShoes = (productTitles) => {
   setshoes(finalShoes)
 }
 
+//jordanShoes
 const jordanShoes = (productTitles) => {
   const finalShoes = Cards.filter((value) => {
     return value.productTitle == productTitles
@@ -40,7 +41,7 @@ const jordanShoes = (productTitles) => {
   setshoes(finalShoes)
 }
 
-
+//campusShoes
 const campusShoes = (productTitles) => {
   const finalShoes = Cards.filter((value) => {
     return value.productTitle == productTitles
