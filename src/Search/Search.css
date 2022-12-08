@@ -1,6 +1,7 @@
 .card
 {
-
+    margin-bottom: 54px;
+    border: 2px solid;
 }
 .card_img
 {
@@ -12,5 +13,15 @@
 }
 .srch
 {
-    
+    margin: 58px 456px;
+    padding: 10px 10px;
+    width: 413px;
+    font-size: medium;
+}
+.main
+{
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

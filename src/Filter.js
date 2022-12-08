@@ -1,4 +1,5 @@
 import React,{ useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import Cards from './Cards'
 import "./Filter.css"
 
@@ -57,7 +58,6 @@ const campusShoes = (productTitles) => {
 
 
 
-
   return (
     <div >
       <div className='navbar'></div>
@@ -69,7 +69,7 @@ const campusShoes = (productTitles) => {
           <button onClick={() => niviaShoes('Nivia')}>nivia</button>
           <button onClick={() => jordanShoes('jordan')}>jordan</button>
           <button onClick={() => campusShoes('Campus')}>campus</button>
-          <a href="">Go to search page</a>
+          <NavLink to="/Search"> Go to search page </NavLink>
         </div>
       </div>
       <h2>Books On your Way</h2>
