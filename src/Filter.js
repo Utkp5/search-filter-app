@@ -69,6 +69,7 @@ const campusShoes = (productTitles) => {
           <button onClick={() => niviaShoes('Nivia')}>nivia</button>
           <button onClick={() => jordanShoes('jordan')}>jordan</button>
           <button onClick={() => campusShoes('Campus')}>campus</button>
+          <a href="">Go to search page</a>
         </div>
       </div>
       <h2>Books On your Way</h2>
