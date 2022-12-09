@@ -62,7 +62,6 @@ const campusShoes = (productTitles) => {
     <div >
       <div className='navbar'></div>
       <div className='sidebar'>
-      <input type="search" name="Search" id="" className='search' />
         <div className='btn_div'>
           <button onClick={allShoes}>All</button>
           <button onClick={() => nikeShoes('Nike')}>nike</button>
