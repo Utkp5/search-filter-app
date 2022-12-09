@@ -1,0 +1,28 @@
+.counter_div
+{
+    background-color: black;
+    color: white;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    font-size: x-large;
+    margin-top: 1000px;
+    margin-bottom: 100px;
+}
+p
+{
+    display: flex;
+    align-items: center;
+    width: 114px;
+}
+h2{
+    text-align: center;
+    color: crimson;
+    font-weight: 600;
+}
+.counter_icons
+{
+    margin: 0px 5px;
+}

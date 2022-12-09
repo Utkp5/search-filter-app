@@ -69,6 +69,7 @@ const campusShoes = (productTitles) => {
           <button onClick={() => jordanShoes('jordan')}>jordan</button>
           <button onClick={() => campusShoes('Campus')}>campus</button>
           <NavLink to="/Search"> Go to search page </NavLink>
+          <NavLink to="/Counter"> Go to Countup page </NavLink>
         </div>
       </div>
       <h2>Books On your Way</h2>
