@@ -12,8 +12,7 @@ function Counter() {
 
   return (
     <div>
-    <h2>Counter System</h2>
-    <Readmore limit={100}/>
+    <Readmore />
     <ScrollTrigger onEnter={() => setcountOn(true)} onExit={() => setcountOn(false)}>
       <div className="counter_div">
         <p className="counter_p">

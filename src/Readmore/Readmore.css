@@ -1,0 +1,6 @@
+.first_div
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
