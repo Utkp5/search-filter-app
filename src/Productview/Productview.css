@@ -11,10 +11,10 @@
     justify-content: center;
     align-items: center;
 }
-.columnTWo
+/* .columnTWo
 {
     flex: 5;
-}
+} */
  /* .productrow */
 /* {
     width: 10%;
@@ -29,7 +29,6 @@
     cursor: pointer;
     margin: 10px 0px;
     padding: 12px 14px;
-    border: 1px solid;
 } 
 .prdct_img1
 {
@@ -37,4 +36,14 @@
     width: 132%;
     cursor: pointer;
     float: right;
+}
+
+.prdct_img:active{
+    border: 2px solid;
+  }
+
+.view_div
+{
+    display: flex;
+    align-items: center;
 }

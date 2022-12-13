@@ -16,6 +16,7 @@ function Productview() {
 
 
   return (
+    <div className="view_div">
     <div className="ProductViewSection">
       <div className="row">
         <div className="columnOne">
@@ -37,6 +38,9 @@ function Productview() {
         </div>
       </div>
     </div>
+    <div>ok ji</div>
+    </div>
+
   );
 }
 
