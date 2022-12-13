@@ -1,0 +1,35 @@
+.ProductViewSection
+{
+    width: 30%;
+    padding: 10px;
+    margin: 30px;
+    border: 1.5px solid black;
+}
+.row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.columnOne
+{
+    padding: 6px;
+}
+.columnTWo
+{
+    flex: 5;
+}
+.Productrow
+{
+    width: 100%;
+    padding: 2px;
+    margin-bottom:15px;
+    cursor: pointer;
+}
+.prdct_img
+{
+    display: block;
+    width: 90%;
+    cursor: pointer;
+    margin: 10px 0px;
+}
