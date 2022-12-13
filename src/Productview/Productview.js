@@ -22,7 +22,7 @@ function Productview() {
         {
             ProductData.Image.map((image,index) => {
                 return (index < 4) ?
-                <div key={index} classname="productrow" onClick={() => setdata({image,index})} style={{border: data.image === image ? '2px solid red' : ''}}>
+                <div key={index} classname="productrow" onClick={() => setdata({image,index})}>
                     <img src={image} alt="" className="prdct_img"/>
                 </div> : null
             })
@@ -31,7 +31,7 @@ function Productview() {
         <div className="columnTwo">
         <div className="displayproduct">
         <div className="colmTwo_div">
-            <img src={data ? data.image : ProductData.Image[0]} alt="" className="prdct_img"/>
+            <img src={data ? data.image : ProductData.Image[0]} alt="" className="prdct_img1"/>
         </div>
         </div>
         </div>
